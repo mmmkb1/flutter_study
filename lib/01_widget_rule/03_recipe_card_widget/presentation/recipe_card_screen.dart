@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/03_RecipeCardWidget/data/model/recipe.dart';
+import 'package:flutter_study/01_widget_rule/03_recipe_card_widget/data/model/recipe.dart';
 
 class RecipeCardScreen extends StatefulWidget {
   const RecipeCardScreen({super.key});

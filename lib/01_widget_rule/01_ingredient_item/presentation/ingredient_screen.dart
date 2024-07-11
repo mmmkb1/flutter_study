@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/01_ingredient_item/data/model/ingredient.dart';
-import 'package:flutter_study/01_ingredient_item/presentation/component/IngredientItem.dart';
+import 'package:flutter_study/01_widget_rule/01_ingredient_item/data/model/ingredient.dart';
+import 'package:flutter_study/01_widget_rule/01_ingredient_item/presentation/component/IngredientItem.dart';
 
 class IngredientScreen extends StatelessWidget {
   final List<Ingredient> ingredients = [

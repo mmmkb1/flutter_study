@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/01_ingredient_item/data/model/ingredient.dart';
+import 'package:flutter_study/01_widget_rule/01_ingredient_item/data/model/ingredient.dart';
 
 class IngredientItem extends StatelessWidget {
   final Ingredient ingredient;

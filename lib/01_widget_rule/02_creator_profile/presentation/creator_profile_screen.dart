@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/02_CreatorProfile/data/model/creator_profile.dart';
+import 'package:flutter_study/01_widget_rule/02_creator_profile/data/model/creator_profile.dart';
 
 class CreatorProfileScreen extends StatefulWidget {
   const CreatorProfileScreen({super.key});
