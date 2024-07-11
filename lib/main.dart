@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/01_IngredientItem/presentation/ingredient_screen.dart';
-import 'package:flutter_study/02_CreatorProfile/presentation/creator_profile_screen.dart';
-import 'package:flutter_study/03_RecipeCardWidget/presentation/recipe_card_screen.dart';
-import 'package:flutter_study/04_PopUpDialog%20copy/presentation/pop_up_dialog_screen.dart';
+import 'package:flutter_study/01_ingredient_item/presentation/ingredient_screen.dart';
+import 'package:flutter_study/02_creator_profile/presentation/creator_profile_screen.dart';
+import 'package:flutter_study/03_recipe_card_widget/presentation/recipe_card_screen.dart';
+import 'package:flutter_study/04_pop_up_dialog/presentation/pop_up_dialog_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const PopUpDialogScreen(),
+      home: IngredientScreen(),
     );
   }
 }

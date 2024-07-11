@@ -16,7 +16,12 @@ class PopUpDialogScreen extends StatelessWidget {
             onPressed: () {
               showDialog(
                 context: context,
-                builder: (BuildContext context) => const RecipeLinkDialog(),
+                builder: (BuildContext context) => RecipeLinkDialog(
+                  onTap: (value) {
+                    Clipboard.setData(ClipboardData(text: value));
+                  },
+                  recipeLink: 'app.Recipe.co/jollof_rice',
+                ),
               );
             },
             child: const Text('Show Popup'),
@@ -28,7 +33,9 @@ class PopUpDialogScreen extends StatelessWidget {
 }
 
 class RecipeLinkDialog extends StatelessWidget {
-  const RecipeLinkDialog({super.key});
+  final void Function(String)? onTap;
+  final String recipeLink;
+  const RecipeLinkDialog({super.key, required this.recipeLink, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -73,15 +80,12 @@ class RecipeLinkDialog extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
-                  'app.Recipe.co/jollof_rice',
-                  style: TextStyle(fontSize: 16),
+                Text(
+                  recipeLink,
+                  style: const TextStyle(fontSize: 16),
                 ),
                 GestureDetector(
-                  onTap: () {
-                    Clipboard.setData(
-                        const ClipboardData(text: 'app.Recipe.co/jollof_rice'));
-                  },
+                  onTap: () {},
                   child: Container(
                     padding: const EdgeInsets.all(4.0),
                     decoration: BoxDecoration(
